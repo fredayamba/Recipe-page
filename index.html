@@ -5,35 +5,41 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Young+Serif&display=swap" rel="stylesheet">
 </head>
 <body class="bg-orange-100 flex justify-center items-center py-16">
-    <div class="bg-white rounded-xl w-1/3">
-        <div class="flex flex-col p-10">
+    <div class="bg-white rounded-2xl w-3/7 font-serif">
+        <div class="flex flex-col p-12 gap-5">
             <div>
-                <img class="rounded-lg" src="assets/image-omelette.jpeg" alt="image of omelette">
+                <img class="rounded-xl" src="assets/image-omelette.jpeg" alt="image of omelette">
             </div>
-            <div>
-                <h2>Simple Omelette Recipe</h2>
-                <p>An easy and quick dish, perfect for any meal. 
+            <!--Simple Omelette-->
+            <div class="gap-5">
+                <h2 class="text-3xl gap-6 font-bold">Simple Omelette Recipe</h2>
+                <p class="text-gray-700 py-4">An easy and quick dish, perfect for any meal. 
                     This classic omelette combines beaten eggs 
                     cooked to perfection, optionally filled with
                      your choice of cheese, vegetables, or meats.</p>
             </div>
-            <div class="bg-pink-100">
-                <h2>Preparation time</h2>
-                <ul>
-                    <li>Total: Approximately 10 minutes</li>
-                    <li>Preparation: 5 minutes</li>
-                    <li>Cooking: 5 minutes</li>
+            <!--Preparation Time-->
+            <div class="bg-pink-50 py-4 px-8 rounded-2xl">
+                <h2 class="font-bold text-2xl text-pink-950 py-2">Preparation time</h2>
+                <ul class="list-disc list-inside">
+                    <li><span class="font-bold">Total:</span><span class="text-gray-700"> Approximately 10 minutes</span> </li>
+                    <li><span class="font-bold">Preparation:</span> <span class="text-gray-700">5 minutes</span> </li>
+                    <li><span class="font-bold">Cooking:</span> <span class="text-gray-700">5 minutes</span></li>
                 </ul>
             </div>
+            <!--Ingredients-->
             <div>
-                <h2>Ingredients</h2>
-                <ul>
+                <h2 class="text-orange-900 font-bold text-2xl">Ingredients</h2>
+                <ul class="list-disc list-inside text-gray-700">
                     <li>2-3 large eggs</li>
                     <li>Salt, to taste</li>
                     <li>Pepper, to taste</li>
-                    <li>1 tablespookn of butter or oil</li>
+                    <li>1 tablespoon of butter or oil</li>
                     <li>Optional fillings: cheese, diced vegetables, cooked meats, herbs</li>
                     
                 </ul>
@@ -41,26 +47,39 @@
             <hr>
             <!--Instructions-->
             <div>
-                <h2>Instructions</h2>
-                <ol>
-                    <li>Beat the eggs: In a bowl, beat the eggs with a 
+                <h2 class="text-orange-900 font-bold text-2xl">Instructions</h2>
+                <ol class="list-decimal list-inside text-gray-700">
+                    <li><span class="font-bold"> Beat the eggs:</span> In a bowl, beat the eggs with a 
                         pinch of salt and pepper until they are well mixed.
                          You can add a tablespoon of water or milk for a fluffier texture.</li>
-                    <li>Heat the pan: Place a non-stick frying pan over medium 
+                    <li><span class="font-bold">Heat the pan:</span> Place a non-stick frying pan over medium 
                         heat and add butter or oil.</li>
-                    <li>Cook the omelette: Once the butter is melted and bubbling, 
+                    <li><span class="font-bold">Cook the omelette:</span> Once the butter is melted and bubbling, 
                         pour in the eggs. Tilt the pan to ensure the eggs evenly 
                         coat the surface.</li>
-                    <li>Add fillings (optional): When the eggs begin to set at the 
+                    <li><span class="font-bold">Add fillings (optional):</span> When the eggs begin to set at the 
                         edges but are still slightly runny in the middle, sprinkle
                          your chosen fillings over one half of the omelette.</li>
-                    <li>Fold and serve: As the omelette continues to cook, carefully 
+                    <li><span class="font-bold">Fold and serve:</span> As the omelette continues to cook, carefully 
                         lift one edge and fold it over the fillings. Let it cook for
                          another minute, then slide it onto a plate.</li>
-                    <li>Enjoy: Serve hot, with additional salt and pepper if needed.</li>
+                    <li><span class="font-bold">Enjoy:</span> Serve hot, with additional salt and pepper if needed.</li>
                 </ol>
             </div>
             <hr>
+            <div>
+                <!--Nutrition-->
+                <h2 class="text-orange-900 font-bold text-2xl">Nutrition</h2>
+                <p>The table below shows nutritional values per serving without
+                     the additional fillings.</p>
+                
+            </div>
+            <!--Footer-->
+            <div>
+                <p>Challenge by <a href="https://www.bbcgoodfood.com/recipes/simple-omelette-recipe">
+                    Frontend Mentor. Coded by <a href="https://github.com/fredayamba">
+                        Fred Ayamba</a></a></p>
+            </div>
             
         </div>
     </div>
